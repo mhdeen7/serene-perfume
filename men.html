@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Fragrances - Serene Perfume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <h1 class="logo">Serene Perfume</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="ladies.html">Ladies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#">🔍</a>
+        <a href="cart.html">🛒 (<span class="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <div class="products-hero men-hero">
+    <div class="container">
+      <p class="products-hero-sub">For Him</p>
+      <h1 class="products-hero-title">Men's Fragrances</h1>
+      <p class="products-hero-desc">Bold, woody & oriental scents crafted for the modern man</p>
+    </div>
+  </div>
+
+
+  <section class="listing-section">
+    <div class="container">
+      <div class="filter-tabs" id="filter-tabs"></div>
+      <div class="product-grid" id="product-grid"></div>
+    </div>
+  </section>
+
+
+  <div class="panel-overlay" id="overlay" onclick="closePanel()"></div>
+
+  <div class="slide-panel" id="slide-panel">
+    <button class="panel-close" onclick="closePanel()">✕</button>
+
+    <div class="panel-image-wrap">
+      <img id="panel-main-img" class="panel-main-img" src="" alt="">
+      <div class="panel-thumbnails" id="panel-thumbnails"></div>
+    </div>
+
+    <p class="panel-brand" id="panel-brand"></p>
+    <h2 class="panel-name" id="panel-name"></h2>
+    <p class="panel-price" id="panel-price"></p>
+    <p class="panel-desc" id="panel-desc"></p>
+
+    <div class="panel-actions">
+      <div class="qty-box">
+        <button onclick="changeQty(-1)">−</button>
+        <span id="panel-qty">1</span>
+        <button onclick="changeQty(1)">+</button>
+      </div>
+      <button class="add-cart-btn" id="panel-cart-btn">🛒 Add to Cart</button>
+      <a href="index.html#contact" class="inquire-link">Inquire</a>
+    </div>
+
+    <div class="related-section">
+      <h4>More from this brand</h4>
+      <div class="related-list" id="related-list"></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Serene Perfume. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

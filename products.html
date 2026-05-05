@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Serene Perfume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    
+
+  <header>
+    <div class="container header-flex">
+      <h1 class="logo">Serene Perfume</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#">🔍</a>
+        <a href="cart.html">🛒 (<span class="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <div class="products-hero">
+    <div class="container">
+      <p class="products-hero-sub">Explore Our World</p>
+      <h1 class="products-hero-title">Find Your Signature Scent</h1>
+    </div>
+  </div>
+
+  <!-- CATEGORY CARDS -->
+  <section class="category-section">
+    <div class="container">
+
+      <h2 class="category-heading">Shop by Collection</h2>
+
+      <div class="category-cards">
+
+        <!-- MEN card links to men.html -->
+        <a href="men.html" class="category-card">
+          <div class="category-card-img men-bg">
+            <img src="images/men.jpeg" alt="">
+          </div>
+          <div class="category-card-body">
+            <h3>Men's Fragrances</h3>
+            <p>Bold, woody & oriental scents crafted for him</p>
+            <span class="category-cta">Explore Collection →</span>
+          </div>
+        </a>
+
+        <!-- LADIES card links to ladies.html -->
+        <a href="ladies.html" class="category-card">
+          <div class="category-card-img ladies-bg">
+            <img src="images/ladies.jpeg" alt="">
+          </div>
+          <div class="category-card-body">
+            <h3>Ladies' Fragrances</h3>
+            <p>Floral, fresh & elegant scents crafted for her</p>
+            <span class="category-cta">Explore Collection →</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Serene Perfume. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>

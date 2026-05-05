@@ -1,123 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serene Perfume</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serene Perfume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container header-flex">
-           <h1 class="logo">
-               Serene Perfume
-           </h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                 </ul>
-            </nav>
 
-            <div class="actions">
-                <a href="#">🔍</a>
-                <a href="#">🛒 (0)</a>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="container header-flex">
+      <h1 class="logo">Serene Perfume</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#">🔍</a>
+        <a href="cart.html">🛒 (<span class="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
 
- <section  id ="home" class="hero">
+  <section id="home" class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
-           <p class="small-text">
-               Buy Popular Colognes on Sale at a Discount
-            </p>
-
-           <h1>
-              World Class <br>
-              Fragrance
-            </h1>
-
-            <a href="#products" class="btn">Shop Now</a>
+        <p class="small-text">Buy Popular Colognes on Sale at a Discount</p>
+        <h1>World Class <br> Fragrance</h1>
+        <a href="products.html" class="btn">Shop Now</a>
       </div>
-
-        <div class="hero-image">
-            <img src="images/OUD.MOUD.jpg" alt="OUD-MOUD" >
-        </div>
-
+      <div class="hero-image">
+        <img src="images/serene.png" alt="Perfume">
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Serene Perfume. All rights reserved.</p>
-        </div>
-    </footer>
- </section>
-
- <section id="products">
+  <section id="products">
     <div class="container">
-        <h2 class="section-title">Our Collection</h2>
-
-       <div class="product-grid">
-
-          <div class="product-card">
-          <img src="images/OUD.MOUD.jpg" alt="Perfume">
-          <h3>Oud Mood</h3>
-          <p>KES 3,500</p>
-          <a href="#">🛒</a>
-    </div>
-
-    <div class="product-card">
-      <img src="images/OUD.MOUD.jpg" alt="Perfume">
-      <h3>Royal Essence</h3>
-      <p>KES 4,200</p>
-      <a href="#">🛒</a>
-    </div>
-
-    <div class="product-card">
-      <img src="images/OUD.MOUD.jpg" alt="Perfume">
-      <h3>Soft Bloom</h3>
-      <p>KES 3,000</p>
-      <a href="#">🛒</a>
-    </div>
-
-    <a href="products.html" class="view-all">View All Perfumes →</a>
-
-    
-
-  </div>
-</div>
-    
-
- </section>
-
- <section id="about">
-
- </section>
-
- <section id="contact">
-      <div class="container contact-grid">
-         <div class="contact-info">
-              <h2>Contact Us</h2>
-              <p>Have questions or feedback? We'd love to hear from you!</p>
-              <p>Email: info@sereneperfume.com</p>
-              <p>Phone: +254 745 804 757</p>
-         </div>
-
-         <form class="contact-form">
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required>
-              <textarea placeholder="Your Message" rows="5"></textarea>
-              <button type="submit">Send Message</button>
-         </form>
+      <h2 class="section-title">Our Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/OUD.MOUD.jpg" alt="Oud Mood">
+          <div class="card-body">
+            <h3>Oud Mood</h3>
+            <p class="card-price">KES 3,500</p>
+            <button class="cart-btn">🛒</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="images/YOU.jpeg" alt="Ramz Gold">
+          <div class="card-body">
+            <h3>YOU</h3>
+            <p class="card-price">KES 4,000</p>
+            <button class="cart-btn">🛒</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="images/valentino.jpeg" alt="Hawas">
+          <div class="card-body">
+            <h3>Valentino</h3>
+            <p class="card-price">KES 3,600</p>
+            <button class="cart-btn">🛒</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="images/lattafa.webp" alt="Wisal">
+          <div class="card-body">
+            <h3>Khamrah Qahwa</h3>
+            <p class="card-price">KES 3,300</p>
+            <button class="cart-btn">🛒</button>
+          </div>
+        </div>
       </div>
- </section>
+      <a href="products.html" class="view-all">View All Perfumes →</a>
+    </div>
+  </section>
 
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>About Our Fragrances</h2>
+        <p class="intro">
+          Discover a world of luxury scents crafted to leave a lasting impression.
+          We bring you premium perfumes that define elegance, confidence, and style.
+        </p>
+        <div class="about-features">
+          <div class="feature">
+            <h4>✨ Premium Quality</h4>
+            <p>Carefully selected long-lasting fragrances.</p>
+          </div>
+          <div class="feature">
+            <h4>🚚 Fast Delivery</h4>
+            <p>Quick and reliable delivery across Kenya.</p>
+          </div>
+          <div class="feature">
+            <h4>💎 Unique Collection</h4>
+            <p>Exclusive scents you won't find everywhere.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="images/SAUV.jpeg" alt="Perfume collection">
+      </div>
+    </div>
+  </section>
 
-    
-    
+  <section id="contact" class="contact">
+    <div class="container">
+ 
+      <div class="contact-top">
+ 
+        <!-- LEFT: Info rows -->
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p class="contact-subtitle">
+            Have a question or want to place an order?
+            We're here to help — reach out anytime.
+          </p>
+ 
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contact-row-text">
+              <p class="contact-label">Email</p>
+              <a href="mailto:info@sereneperfume.com">info@sereneperfume.com</a>
+            </div>
+          </div>
+ 
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-row-text">
+              <p class="contact-label">Phone / WhatsApp</p>
+              <span>+254 745 804 757</span>
+            </div>
+          </div>
+ 
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-row-text">
+              <p class="contact-label">Location</p>
+              <span>Nairobi, Kenya</span>
+            </div>
+          </div>
+ 
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="contact-row-text">
+              <p class="contact-label">Working Hours</p>
+              <span>Mon – Sat, 9am – 7pm</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- RIGHT: Form -->
+        <form class="contact-form" id="contact-form">
+          <h3>Send us a message</h3>
+ 
+          <div class="form-two-col">
+            <div class="form-field">
+              <label>Your Name</label>
+              <input type="text" placeholder="e.g. John Kamau" required>
+            </div>
+            <div class="form-field">
+              <label>Your Email</label>
+              <input type="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+ 
+          <div class="form-field">
+            <label>Subject</label>
+            <input type="text" placeholder="e.g. Order enquiry">
+          </div>
+ 
+          <div class="form-field">
+            <label>Message</label>
+            <textarea placeholder="Write your message here..." rows="4"></textarea>
+          </div>
+ 
+          <button type="submit" class="form-submit">
+            Send Message <i class="fa-solid fa-arrow-right"></i>
+          </button>
+ 
+          <!-- Success message (shown by JS) -->
+          <div class="form-success" id="form-success">
+            <i class="fa-solid fa-circle-check"></i>
+            Message sent! We'll get back to you soon.
+          </div>
+        </form>
+ 
+      </div>
+ 
+      <!-- Social links -->
+      <div class="social-row">
+        <a href="#" class="social-btn whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#" class="social-btn instagram-btn">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="#" class="social-btn tiktok-btn">
+          <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
+      </div>
+ 
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Serene Perfume. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
